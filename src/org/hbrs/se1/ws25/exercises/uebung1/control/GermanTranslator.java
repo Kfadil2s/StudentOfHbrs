@@ -9,8 +9,15 @@ public class GermanTranslator implements Translator {
 	 */
 	 public String translateNumber(int number) {
 		// [ihr Source Code aus Übung 1-2]
+         String[] s = {"eins", "zwei", "drei", "vier", "fuenf", "sechs", "sieben", "acht", "neun", "zehn"};
 
-		return "null";
+         try {
+             return s[number - 1];
+         } catch (Exception e) {
+             return "Übersetzung der Zahl " + number + " nicht möglich" + "\n" +
+                     "Versionsnummer des Translators: " + GermanTranslator.version;
+         }
+
 	}
 
 	/**
