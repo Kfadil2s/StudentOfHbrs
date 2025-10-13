@@ -2,7 +2,7 @@ package org.hbrs.se1.ws25.uebung2;
 
 public class ActualMember implements Member {
 
-    private Integer id;
+    private  Integer id;
 
     public ActualMember(Integer id){
         this.id = id;
