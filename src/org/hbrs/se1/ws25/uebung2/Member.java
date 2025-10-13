@@ -1,4 +1,4 @@
-package org.hbrs.se1.ws25.exercises.uebung2;
+package org.hbrs.se1.ws25.uebung2;
 
 public interface Member {
 
@@ -10,4 +10,5 @@ public interface Member {
      */
     
     public Integer getID();
+        public String toString();
 }
